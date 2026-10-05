@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+}
+
+
+head{
+    background-color: #F4F4F4;
+
+}
+
+.transparente{
+    background-color: rgb(0, 0, 0);
+    width: 250px;
+    opacity: 70%;
+    height: 670px;
+}
+#texto{
+    position: relative;
+    top: -457px;
+    padding-left: 34%;
+}
+    .img{height: 10px;
+    width: 23px;}
+    
+body{
+  
+ 
+    
+        background-image: url(Sem\ título.png);border-image:100%;
+        background-repeat: no-repeat;
+        background-size: 125%;
+        height: 100vh;
+          
+        /* cores de texto */
+        --text-white: #000000;
+        --text-dark: #ffffff;
+            
+        /* cores de fundo */
+        --bg-grey-light: #f5f5f5;
+        --bg-white: #ffffff;
+        --bg-blue-dark: #142136;
+        --bg-indigo: #6366f1;
+      
+}
+        .texto2 p{
+            top: -300px;
+            color: #F4F4F4;
+            padding-left:123px ;
+        }
+        .texto2 svg{
+            height: 30px;
+            width: 30px;
+            padding-left: 190px;
+        }
+        .centro p{
+            top: 123px;
+            color: #F4F4F4;
+            padding-left:123px ;  
+        }
+       .habilidades svg{
+        height: 23px; 
+       }
+       .p{
+        height: 23px;
+        color: #F4F4F4;
+       }
+       .centro a{
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+   }
+   main{
+
+    height: 100%;
+   }
+   .dark{
+    --text-white: #e6e6e6;
+    --text-dark: rgb(255, 255, 255);
+    --bg-grey-light: #0062ff;
+    --bg-white: #22395d;
+    --bg-blue-dark: #142136;
+    --bg-indigo: #7577e1;
+    filter:invert(1);
+    background-image: url("Sem\ título.pretonovo.png");
+  }
+  
+  .text{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--bg-white);
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+  
+  .paragraph{
+    font-size: 16px;
+    color: var(--text-dark);
+  }
+  
+  .heading{
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    color: var(--text-dark);
+  }
+    
+  .button{
+    width: 200px;
+    padding: 5px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: var(--bg-indigo);
+    color: var(--text-white);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    background-color: #6366f1;
+  }
+  @media screen and (max-width:500px){
+    * {
+        margin: 0;
+    }
+    #menu {
+        width: 54%;
+    
+    }
+    .transparente {
+        opacity: 70%;
+        height: 670px;  
+    }
+    
+    body {
+        background-image: none;
+        background-color: brown;     
+    }
+    
+    .imagem4 {
+        top: -750px;
+    }
+    
+    .imagem6 {
+        top: -750px;
+    }
+    
+    .imagem2 {
+        height: 23px;
+        width: 23px;
+        top: -700px;
+    }
+    
+    .p {
+        top: -770px;
+        color: #F4F4F4;
+        padding-left: 34px;
+       }
+     .imagem1 {
+        top: -600px;
+        height: 34px;
+
+      }
+    
+    .image3 { 
+        top: -640px;
+        height: 34px;
+        padding-left: 34px;
+    }
+    
+    .imagem5 {
+        top: -680px;
+        height: 34px;
+        padding-left: 78px;
+    }
+    
+    
+    
+    
+    .centro a {
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .dark {
+        --text-white: #e6e6e6;
+        --text-dark: rgb(255, 255, 255);
+        --bg-grey-light: #0062ff;
+        --bg-white: #22395d;
+        --bg-blue-dark: #142136;
+        --bg-indigo: #7577e1;
+        filter: invert(1);
+        background-image: none;
+     
+    }
+    
+    .text {
+        width: 100%;
+        padding: 20px;
+        background-color: var(--bg-white);
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+    
+    .paragraph {
+        font-size: 16px;
+        color: var(--text-dark);
+    }
+    
+    .heading {
+        font-size: 40px;
+        letter-spacing: 1px;
+        font-weight: 900;
+        margin-bottom: 40px;
+        color: var(--text-dark);
+    }
+    
+    .button {
+        width: 200px;
+        padding: 5px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        font-family: inherit;
+        cursor: pointer;
+        background-color: var(--bg-indigo);
+        color: var(--text-white);
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+        background-color: #6366f1;
+    }
+    #texto2{
+        margin-top: 45px;
+      
+        top: -570px;
+    }
+
+}

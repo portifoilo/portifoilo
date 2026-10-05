@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Pedro Henrique Rocha de Souza, estudante de tecnologia e desenvolvedor front-end em formação.">
+  <meta name="theme-color" content="#f8f9f6">
+  <title>Pedro Rocha | Portfólio</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Pedro Rocha, início">PR<span>.</span></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#projetos">Projetos</a>
+      <a href="habilidade.html">Habilidades</a>
+      <a href="PAGINA3.html">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">Modo escuro</button>
+      <a class="header-link" href="formulario.html">Vamos conversar <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Tecnologia, criatividade e aprendizado</p>
+        <h1 id="hero-title">Olá, eu sou<br><span>Pedro Rocha.</span></h1>
+        <p class="hero-description">Estudante de tecnologia e desenvolvedor front-end em formação. Gosto de transformar ideias em experiências digitais simples, úteis e bem-feitas.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos">Conheça meus projetos <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="PAGINA3.html">Entre em contato <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="hero-note">Formado no ensino médio técnico do Cotemig <span aria-hidden="true">·</span> Belo Horizonte, MG</p>
+      </div>
+
+      <a class="featured-project" href="http://127.0.0.1:5501/index.html" target="_blank" rel="noreferrer" aria-label="Abrir o site da churrascaria Espetinho do Pedrão">
+        <img src="Captura de tela de 2026-10-05 16-44-42.png" alt="Prévia do site da churrascaria Espetinho do Pedrão">
+        <span class="featured-label"><span>Projeto em destaque</span><span>Espetinho do Pedrão ↗</span></span>
+        <span class="image-index" aria-hidden="true">01 / 02</span>
+      </a>
+    </section>
+
+    <section class="projects section-wrap" id="projetos" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Duas criações em destaque</p>
+          <h2 id="projects-title">Projetos selecionados<span>.</span></h2>
+        </div>
+      </div>
+
+      <div class="project-grid two-up">
+        <a class="project-card" href="http://127.0.0.1:5501/index.html" target="_blank" rel="noreferrer">
+          <div class="project-image"><img src="Captura de tela de 2026-10-05 16-44-42.png" alt="Prévia da página da churrascaria Espetinho do Pedrão" loading="lazy"><span class="project-arrow" aria-hidden="true">↗</span></div>
+          <div class="project-meta"><span>Landing page · churrasco</span><span>01</span></div>
+          <h3>Espetinho do Pedrão</h3>
+          <p>Estilo acolhedor, tradição gaúcha e foco na experiência de sabor da marca.</p>
+        </a>
+        <a class="project-card" href="http://127.0.0.1:5503/index.html" target="_blank" rel="noreferrer">
+          <div class="project-image"><img src="Captura de tela de 2026-10-05 16-45-12.png" alt="Prévia da página do portfolio ELIT PHOTO" loading="lazy"><span class="project-arrow" aria-hidden="true">↗</span></div>
+          <div class="project-meta"><span>Portfolio · fotografia</span><span>02</span></div>
+          <h3>ELIT PHOTO</h3>
+          <p>Identidade elegante e visual editorial para destacar fotografia, criação e estética.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="about-band" aria-labelledby="about-title">
+      <div class="about-inner">
+        <p class="eyebrow">Sobre mim</p>
+        <div class="about-content">
+          <h2 id="about-title">Aprender fazendo.<br>Melhorar a cada projeto.</h2>
+          <div>
+            <p>Minha jornada em tecnologia começou no ensino médio técnico do Cotemig. Desde então, sigo estudando programação, desenvolvimento front-end e novas formas de resolver problemas com tecnologia.</p>
+            <a class="text-link" href="habilidade.html">Conheça minhas habilidades <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="skill-list" aria-label="Áreas de interesse">
+          <span>Desenvolvimento front-end</span>
+          <span>C# e Python</span>
+          <span>Ciência de dados</span>
+          <span>Manutenção de computadores</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-strip">
+      <p>Tem uma ideia ou oportunidade?</p>
+      <a href="PAGINA3.html">Vamos conversar <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="index.html" aria-label="Pedro Rocha, início">PR<span>.</span></a>
+    <p>Feito por Pedro Rocha <span aria-hidden="true">·</span> 2026</p>
+    <a href="#hero-title">Voltar ao topo ↑</a>
+  </footer>
+
+  <script>
+    const body = document.body;
+    const toggleButton = document.querySelector('.theme-toggle');
+
+    const applyTheme = (theme) => {
+      body.setAttribute('data-theme', theme);
+      const isDark = theme === 'dark';
+      toggleButton.setAttribute('aria-pressed', String(isDark));
+      toggleButton.textContent = isDark ? 'Modo claro' : 'Modo escuro';
+      localStorage.setItem('portfolio-theme', theme);
+    };
+
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme === 'dark' || savedTheme === 'light') {
+      applyTheme(savedTheme);
+    } else {
+      applyTheme('light');
+    }
+
+    toggleButton.addEventListener('click', () => {
+      const nextTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(nextTheme);
+    });
+  </script>
+</body>
+</html>
